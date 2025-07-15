@@ -1,0 +1,60 @@
+Bootstrap: docker
+
+From: rocker/tidyverse:4.4.2
+
+
+
+%labels
+
+    Author Sukrut Shishupal (u1401898)
+
+    Version 1.0
+
+    Description R 4.4.2 with arules, arulesSequences, TraMineR
+
+
+
+%setup
+
+
+    mkdir -p "${SINGULARITY_ROOTFS}/uufs"
+
+    mkdir -p "${SINGULARITY_ROOTFS}/scratch"
+
+
+
+%post
+    # Install if needed, else skip it
+
+    #apt-get update && apt-get install -y \ 
+
+     #   libcurl4-gnutls-dev \
+
+      #  libxml2-dev \
+
+       # libssl-dev \
+
+        #libxt6
+
+
+
+    ## Install CRAN packages	
+
+    Rscript -e 'install.packages(c(
+
+        "arules", "TSP", "TraMineR", "cluster", "dtw",
+
+        "tidyverse", "dplyr", "ggplot2", "shiny", "mlr3",
+
+        "lubridate", "knitr", "plotly", "rmarkdown", "RSQLite"
+
+    ), repos="https://cran.r-project.org", Ncpus=2)'
+
+
+    Rscript -e 'if (!requireNamespace("BiocManager", quietly=TRUE))
+
+                  install.packages("BiocManager", repos="https://cran.r-project.org");
+
+                BiocManager::install("arulesSequences", ask=FALSE)'
+
+
