@@ -51,4 +51,4 @@ rules <- apriori(Groceries, parameter = list(supp = 0.01, conf = 0.2))
 # Inspect top 5 rules sorted by lift
 inspect(sort(rules, by = "lift")[1:5])
 ```
-
+<img width="2124" height="1264" alt="Screenshot 2025-07-15 135700" src="https://github.com/user-attachments/assets/c3699514-a8f0-46ab-8449-33589e1e1374" />
