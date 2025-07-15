@@ -18,10 +18,16 @@ This container is built on rocker/tidyverse:4.4.2 and includes:
 
 # Downloading the container 
 - Option 1: Build from definition file
-1) git clone <https://github.com/sukrut-shishupal/R-container.git>
-2) module load apptainer
-3) cd <R-containe>
-4) apptainer build --fakeroot package-r.sif package-r.def
+```bash
+# Clone the repository
+git clone https://github.com/sukrut-shishupal/R-container.git
+
+# Load Apptainer module
+module load apptainer
+
+# Navigate into the project directory
+cd R-container
+```
 
 - Option 2: Download pre-built container 
 wget <direct-download-url>/package-r.sif
