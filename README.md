@@ -38,7 +38,7 @@ wget <direct-download-url>/package-r.sif
 
 - We have now loaded the 'R' programming language insdie the container. Now we can select the packages we want to use.
 
-# Example use cases
+# Example Use Cases
 - Arules library
 
 <img width="1744" height="1320" alt="Screenshot 2025-07-15 134803" src="https://github.com/user-attachments/assets/bd31b2e6-32a9-433b-8580-8a2908c956f9" />
