@@ -57,7 +57,7 @@ inspect(sort(rules, by = "lift")[1:5])
 - If you'd like to modify this container—such as adding packages or updating versions—you can use the attached `.def` file. Simply make your changes there and build a new `.sif` file with the updated packages.
 ---
 
-## 📬 Contact
+## Contact
 
 If you have any questions, feel free to reach out:
 
@@ -65,7 +65,6 @@ If you have any questions, feel free to reach out:
 PhD Student  
 Department of Biomedical Informatics  
 University of Utah  
-Salt Lake City, UT 84112-5880  
-📞 385-354-9376  
+Salt Lake City, UT 84112-5880   
 📧 [sukrut.shishupal@utah.edu](mailto:sukrut.shishupal@utah.edu)  
 🌐 [sukrut-shishupal.github.io](https://sukrut-shishupal.github.io)
