@@ -52,3 +52,20 @@ rules <- apriori(Groceries, parameter = list(supp = 0.01, conf = 0.2))
 inspect(sort(rules, by = "lift")[1:5])
 ```
 <img width="2124" height="1264" alt="Screenshot 2025-07-15 135700" src="https://github.com/user-attachments/assets/c3699514-a8f0-46ab-8449-33589e1e1374" />
+
+# Future Work
+- If you'd like to modify this container—such as adding packages or updating versions—you can use the attached `.def` file. Simply make your changes there and build a new `.sif` file with the updated packages.
+---
+
+## 📬 Contact
+
+If you have any questions, feel free to reach out:
+
+**Sukrut Shishupal**  
+PhD Student  
+Department of Biomedical Informatics  
+University of Utah  
+Salt Lake City, UT 84112-5880  
+📞 385-354-9376  
+📧 [sukrut.shishupal@utah.edu](mailto:sukrut.shishupal@utah.edu)  
+🌐 [sukrut-shishupal.github.io](https://sukrut-shishupal.github.io)
