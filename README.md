@@ -39,4 +39,16 @@ wget <direct-download-url>/package-r.sif
 - We have now loaded the 'R' programming language insdie the container. Now we can select the packages we want to use.
 
 # Example use cases
-- 
+- Arules library
+
+<img width="1744" height="1320" alt="Screenshot 2025-07-15 134803" src="https://github.com/user-attachments/assets/bd31b2e6-32a9-433b-8580-8a2908c956f9" />
+
+- You can then use:
+``` bash
+# Mine association rules with minimum support and confidence
+rules <- apriori(Groceries, parameter = list(supp = 0.01, conf = 0.2))
+
+# Inspect top 5 rules sorted by lift
+inspect(sort(rules, by = "lift")[1:5])
+```
+
