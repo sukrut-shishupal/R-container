@@ -17,20 +17,8 @@ This container is built on rocker/tidyverse:4.4.2 and includes:
 
 
 # Downloading the container 
-- Option 1: Build from definition file
-```bash
-# Clone the repository
-git clone https://github.com/sukrut-shishupal/R-container.git
-
-# Load Apptainer module
-module load apptainer
-
-# Navigate into the project directory
-cd R-container
-```
-
-- Option 2: Download pre-built container 
-wget <direct-download-url>/package-r.sif
+- Since the container file is pretty big (~900 MB), I've uploaded it in the box folder (https://uofu.box.com/s/yszplfezqb0num2l30g3qiif7rb9esxc).
+- You can download the `.sif` file from this link and place it in your working directory in any CHPC platform.
 
 # Basic Usage
 
